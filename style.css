@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background: url("assets/images/bg.jpg");
+    height: 644px;
+    position: relative;
+    background-position: center center;
+    background-size: max(1600px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box{
+    height: 644px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index:8;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Poppins", sans-serif;
+    height: 85%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    gap: 24px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size:14px;
+    text-align: center;
+}
+.separation{
+    height: 6px;
+    background-color: rgba(54, 54, 54, 0.76);
+    position: relative;
+    z-index: 20;
+}
+.btn{
+    padding: 6px 8px;
+    font-weight: 400;
+    background-color: rgba(59, 58, 58, 0.4);
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    font-weight: 400;
+    color: white;
+    padding: 6px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 900;
+    background-color: rgba(23,23, 23,0.7);
+    border: 1px solid rgba(246,238,238,0.3);
+}
+.btn-red-sm{
+    background-color: red;
+    border: none;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.secimg{
+    position: relative;
+    z-index: 10;
+}
+.secimg img{
+    width:450px;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    position: absolute;
+    top: 61px;
+    right:53px;
+    width: 350px;
+}
+section.first> div{
+    display: flex;
+    flex-direction: column;
+}
+
+section.first> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first> div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+section{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.secthree img{
+    width: 450px;
+    position: relative;
+    z-index: 10;
+}
+.secthree video{
+    position: absolute;
+    top: 40px;
+    right:96px;
+    width:260px; 
+}
+.faq{
+    color: white;
+    padding: 34px;
+}
+.faqbox p{
+    font-size: large;
+}   
+.freq{
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    padding: 20px;
+}
+.faqbox{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    background-color: rgba(54, 54, 54, 0.76);
+    padding: 10px;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+
+.newhero{
+    color: white;
+    text-align: center;
+}
+.newhero div{
+    padding: 10px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer{
+    color: white;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+.footer div ul a{
+    color: white;
+}
+.footer div ul{
+    list-style-type: none;
+}
+.footer div ul li{
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+footer span{
+    text-decoration: underline;
+}
+.text{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .freq{
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
