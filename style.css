@@ -235,6 +235,10 @@ footer span{
 .text{
     padding-bottom: 20px;
 }
+.btn-red:hover {
+    background-color: #ffcccb;
+    color: white;
+}
 
 @media screen and (max-width: 800px) {
     nav{
