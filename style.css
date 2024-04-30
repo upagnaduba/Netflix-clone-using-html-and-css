@@ -236,7 +236,11 @@ footer span{
     padding-bottom: 20px;
 }
 .btn-red:hover {
-    background-color: #ffcccb;
+    background-color: #eb8a8a ;
+    color: white;
+}
+.btn-red-sm:hover{
+    background-color: #eb8a8a ;
     color: white;
 }
 
